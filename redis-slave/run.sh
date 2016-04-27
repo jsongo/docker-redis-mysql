@@ -11,3 +11,4 @@ if [ $MASTER_PORT  ]; then
 fi
 
 sed -Ei 's/\$PASSWORD/'$PASS'/' redis.conf
+redis-server /usr/local/etc/redis/redis.conf

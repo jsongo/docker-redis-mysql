@@ -5,4 +5,4 @@ if [ $REDIS_PASSWORD ]; then
 fi
 
 sed -Ei 's/\$PASSWORD/'$PASS'/' redis.conf
-
+redis-server /usr/local/etc/redis/redis.conf
